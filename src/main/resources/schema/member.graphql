@@ -1,0 +1,50 @@
+extend type Query {
+    #用户
+    member: [Member]
+}
+type Member{
+    #id 非空
+    id:Long!
+    # 手机号码
+    mobile:String
+    # 邮箱
+    email:String
+    # 微信
+    wechat:String
+    # 昵称
+    name:String
+    # 出生年月
+    birthday:Date
+    #身高
+    height:Int
+    #体重
+    weight:Int
+    # 头像
+    profile:String
+    # 性别：0：女 1：男
+    gender:Int
+    # 所在省份
+    province:String
+    # 所在城市
+    city:String
+    # 经度
+    longitude:Float
+    # 纬度
+    latitude:Float
+    # 是否实名认证
+    isAuthentication:Boolean
+    # 状态
+    status:Int
+    #当前用户是否关注了该用户
+    followStatus:Boolean
+    #在线状态
+    onlineStatus:Boolean
+    #时间戳
+    timestamp:Long
+    # 交友状态
+    status2:Boolean
+    # 隐藏状态
+    hideStatus:Boolean
+    # 隐藏位置
+    hideGeo:Boolean
+}
